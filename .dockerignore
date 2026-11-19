@@ -1,0 +1,7 @@
+node_modules
+dist
+certificados
+ejemplos
+.env
+.git
+*.log

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+*.log
+
+# Los certificados .p12 son credenciales: nunca al repositorio.
+certificados/*.p12
+certificados/*.pfx
+

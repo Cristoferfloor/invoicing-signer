@@ -1,0 +1,57 @@
+{
+  "name": "signer-service",
+  "version": "0.1.0",
+  "description": "Microservicio de firma electronica XAdES-BES para comprobantes del SRI Ecuador",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nest build",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:prod": "node dist/main",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/platform-express": "^11.0.1",
+    "@peculiar/webcrypto": "^1.5.0",
+    "@xmldom/xmldom": "^0.9.6",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "node-forge": "^1.3.3",
+    "pg": "^8.23.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "xadesjs": "^2.6.8",
+    "xml-core": "^1.2.6",
+    "xmldsigjs": "^2.8.8"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.0",
+    "@nestjs/schematics": "^11.0.0",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^30.0.0",
+    "@types/multer": "^2.2.0",
+    "@types/node": "^22.10.7",
+    "@types/node-forge": "^1.3.11",
+    "@types/pg": "^8.23.1",
+    "jest": "^30.5.1",
+    "ts-jest": "^29.4.12",
+    "typescript": "^5.7.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": ".",
+    "testRegex": "(src|test)/.*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testEnvironment": "node"
+  }
+}
